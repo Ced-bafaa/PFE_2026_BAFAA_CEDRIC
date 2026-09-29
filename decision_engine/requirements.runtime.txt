@@ -1,0 +1,14 @@
+# Dépendances STRICTEMENT runtime du microservice API (pas d'entraînement).
+# - xgboost-cpu : variante CPU, évite nvidia-nccl-cu12 (~300 Mo de CUDA inutile).
+# - pas de jupyter / ipykernel / matplotlib (notebooks & entraînement uniquement).
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+joblib>=1.3.0
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+pydantic>=2.0.0
+groq>=0.11.0
+# Filtre de pertinence sémantique (couche embeddings). Tire torch :
+# au build, installer torch CPU (extra-index pytorch/cpu) pour éviter ~2 Go de CUDA.
+sentence-transformers>=2.2.0

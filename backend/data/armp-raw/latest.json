@@ -1,0 +1,20 @@
+{
+  "scrapedAt": "2026-04-06T15:32:45.716Z",
+  "config": {
+    "sources": [
+      {
+        "name": "Appels d'offres nationaux",
+        "url": "https://armp.cm/filtres?type=avis&val=1"
+      },
+      {
+        "name": "Appels d'offres internationaux",
+        "url": "https://armp.cm/filtres?type=avis&val=4"
+      },
+      {
+        "name": "Consultations et demandes de cotation",
+        "url": "https://armp.cm/filtres?type=avis&val=2"
+      }
+    ]
+  },
+  "items": []
+}

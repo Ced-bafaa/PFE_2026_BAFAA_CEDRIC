@@ -1,0 +1,206 @@
+[
+  {
+    "id": "1782990492561-h6zofd",
+    "actor": "admin@kiama.cm",
+    "action": "saved_settings",
+    "entityType": "sources_settings",
+    "details": "Fréquence : 1 days",
+    "createdAt": "2026-07-02T11:08:12.562Z"
+  },
+  {
+    "id": "1782919328642-lye6xb",
+    "actor": "admin@kiama.cm",
+    "action": "saved_settings",
+    "entityType": "sources_settings",
+    "details": "Fréquence : 1 days",
+    "createdAt": "2026-07-01T15:22:08.642Z"
+  },
+  {
+    "id": "1782818901523-ee89gm",
+    "actor": "admin@kiama.cm",
+    "action": "saved_settings",
+    "entityType": "sources_settings",
+    "details": "Fréquence : 1 days",
+    "createdAt": "2026-06-30T11:28:21.523Z"
+  },
+  {
+    "id": "1782408486771-acbgtj",
+    "actor": "admin@kiama.cm",
+    "action": "saved_settings",
+    "entityType": "sources_settings",
+    "details": "Fréquence : 1 days",
+    "createdAt": "2026-06-25T17:28:06.771Z"
+  },
+  {
+    "id": "1782408114977-qnklqi",
+    "actor": "admin@kiama.cm",
+    "action": "saved_settings",
+    "entityType": "sources_settings",
+    "details": "Fréquence : 1 days",
+    "createdAt": "2026-06-25T17:21:54.977Z"
+  },
+  {
+    "id": "1782391308768-yyecwk",
+    "actor": "admin@kiama.cm",
+    "action": "saved_settings",
+    "entityType": "sources_settings",
+    "details": "Fréquence : 1 days",
+    "createdAt": "2026-06-25T12:41:48.768Z"
+  },
+  {
+    "id": "1782391308044-5dfcpn",
+    "actor": "admin@kiama.cm",
+    "action": "created",
+    "entityType": "source",
+    "entityId": "SRC-1782391308030",
+    "details": "Test Source (http://example.com)",
+    "createdAt": "2026-06-25T12:41:48.044Z"
+  },
+  {
+    "id": "1782391225876-jlagfp",
+    "actor": "admin@kiama.cm",
+    "action": "saved_settings",
+    "entityType": "sources_settings",
+    "details": "Fréquence : 1 days",
+    "createdAt": "2026-06-25T12:40:25.876Z"
+  },
+  {
+    "id": "1782228364417-4j0q8i",
+    "actor": "admin@kiama.cm",
+    "action": "saved_settings",
+    "entityType": "sources_settings",
+    "details": "Fréquence : 1 days",
+    "createdAt": "2026-06-23T15:26:04.417Z"
+  },
+  {
+    "id": "1782209954244-dc51t1",
+    "actor": "admin@kiama.cm",
+    "action": "saved_settings",
+    "entityType": "sources_settings",
+    "details": "Fréquence : 1 days",
+    "createdAt": "2026-06-23T10:19:14.244Z"
+  },
+  {
+    "id": "1782131310686-1juq3f",
+    "actor": "admin@kiama.cm",
+    "action": "saved_settings",
+    "entityType": "sources_settings",
+    "details": "Fréquence : 1 days",
+    "createdAt": "2026-06-22T12:28:30.686Z"
+  },
+  {
+    "id": "1782054132964-n3ai5v",
+    "actor": "admin@kiama.cm",
+    "action": "saved_settings",
+    "entityType": "sources_settings",
+    "details": "Fréquence : 1 days",
+    "createdAt": "2026-06-21T15:02:12.964Z"
+  },
+  {
+    "id": "1781998716085-8dkvfg",
+    "actor": "admin@kiama.cm",
+    "action": "saved_settings",
+    "entityType": "sources_settings",
+    "details": "Fréquence : 1 days",
+    "createdAt": "2026-06-20T23:38:36.085Z"
+  },
+  {
+    "id": "1781945808044-hd816f",
+    "actor": "admin@kiama.cm",
+    "action": "saved_settings",
+    "entityType": "sources_settings",
+    "details": "Fréquence : 1 days",
+    "createdAt": "2026-06-20T08:56:48.045Z"
+  },
+  {
+    "id": "1781912264988-7v5mn4",
+    "actor": "admin@kiama.cm",
+    "action": "saved_settings",
+    "entityType": "sources_settings",
+    "details": "Fréquence : 1 days",
+    "createdAt": "2026-06-19T23:37:44.988Z"
+  },
+  {
+    "id": "1781685878759-004scf",
+    "actor": "admin@kiama.cm",
+    "action": "saved_settings",
+    "entityType": "sources_settings",
+    "details": "Fréquence : 1 days",
+    "createdAt": "2026-06-17T08:44:38.759Z"
+  },
+  {
+    "id": "1781603531146-gq24qu",
+    "actor": "admin@kiama.cm",
+    "action": "saved_settings",
+    "entityType": "sources_settings",
+    "details": "Fréquence : 1 days",
+    "createdAt": "2026-06-16T09:52:11.146Z"
+  },
+  {
+    "id": "1781602182348-l2ksf5",
+    "actor": "admin@kiama.cm",
+    "action": "saved_settings",
+    "entityType": "sources_settings",
+    "details": "Fréquence : 1 days",
+    "createdAt": "2026-06-16T09:29:42.348Z"
+  },
+  {
+    "id": "1781598796076-v8epw8",
+    "actor": "admin@kiama.cm",
+    "action": "saved_settings",
+    "entityType": "sources_settings",
+    "details": "Fréquence : 1 days",
+    "createdAt": "2026-06-16T08:33:16.076Z"
+  },
+  {
+    "id": "1781512082759-xrdy0p",
+    "actor": "admin@kiama.cm",
+    "action": "saved_settings",
+    "entityType": "sources_settings",
+    "details": "Fréquence : 1 days",
+    "createdAt": "2026-06-15T08:28:02.759Z"
+  },
+  {
+    "id": "1781256940916-1e6v8p",
+    "actor": "admin@kiama.cm",
+    "action": "saved_settings",
+    "entityType": "sources_settings",
+    "details": "Fréquence : 1 days",
+    "createdAt": "2026-06-12T09:35:40.916Z"
+  },
+  {
+    "id": "1781256799614-qpn6t5",
+    "actor": "admin@kiama.cm",
+    "action": "updated",
+    "entityType": "submission_tracking",
+    "entityId": "armp-DEC-INF-2055",
+    "details": "Statuts: Gagné",
+    "createdAt": "2026-06-12T09:33:19.614Z"
+  },
+  {
+    "id": "1781256770198-u6ialk",
+    "actor": "admin@kiama.cm",
+    "action": "submitted",
+    "entityType": "opportunity",
+    "entityId": "armp-DEC-INF-2055",
+    "details": "DECISION N° 05761/26/DG/DAG/S-DGAMP/DMP/SCSAMP/KHD DU 01/06/2026 DECLARANT INFRUCTUEUX LE LOT 1 DE L’APPEL D’OFFRES NATIONAL OUVERT N°002/26/AONO/SDCC/CIPM DU 19/03/2026 POUR LA FOURNITURE DE DEUX (02) LOTS D’ÉQUIPEMENTS TÉLÉCOM À LA SODECOTON",
+    "createdAt": "2026-06-12T09:32:50.198Z"
+  },
+  {
+    "id": "1781256770153-uc03ek",
+    "actor": "admin@kiama.cm",
+    "action": "submitted",
+    "entityType": "opportunity",
+    "entityId": "armp-ADDITIF-16679",
+    "details": "ADDITIF RECTIFICATIF AU DOSSIER D’APPEL D’OFFRES NATIONAL OUVERT N°03/AONO/ANTIC/DG/CIPM/2026 DU 28 AVRIL 2026, POUR LA PRODUCTION DES AGENDAS, CALENDRIERS, CARTES DE VŒUX, ENVELOPPES ET SHOPPING BAGS DE L’AGENCE, EXERCICE 2026.",
+    "createdAt": "2026-06-12T09:32:50.153Z"
+  },
+  {
+    "id": "1781200232610-t8fckj",
+    "actor": "admin@kiama.cm",
+    "action": "saved_settings",
+    "entityType": "sources_settings",
+    "details": "Fréquence : 1 days",
+    "createdAt": "2026-06-11T17:50:32.610Z"
+  }
+]

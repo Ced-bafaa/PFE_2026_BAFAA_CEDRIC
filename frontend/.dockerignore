@@ -1,0 +1,8 @@
+node_modules/
+dist/
+# .env exclu : la config (VITE_API_URL/KEY) est injectée au build via --build-arg.
+.env
+.env.*
+.git/
+*.log
+npm-debug.log*

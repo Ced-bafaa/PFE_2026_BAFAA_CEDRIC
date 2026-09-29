@@ -1,0 +1,15 @@
+{
+  "_comment": "Renomme ce fichier en keywords.json pour activer. Les mots-clés sont aussi mergés depuis la variable d'env AO_EXTRACTOR_KEYWORDS (séparateurs , ; ou \\n). Matching post-extraction sur objet + tech_stack + exigences techniques + critères évaluation + personnel clé.",
+  "keywords": [
+    "système d'information",
+    "cybersécurité",
+    "ISO 27001",
+    "réseau",
+    "fibre optique",
+    "data center",
+    "cloud",
+    "ERP",
+    "plateforme",
+    "audit informatique"
+  ]
+}

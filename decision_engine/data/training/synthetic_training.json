@@ -1,0 +1,427 @@
+[
+  {
+    "_comment": "GO — budget modéré, caution légère, stack IT compatible",
+    "administratif": {
+      "reference": "SYN-GO-001",
+      "objet": "Développement d'un système d'information de gestion hospitalière",
+      "maitre_ouvrage": "Hôpital Central de Yaoundé",
+      "financement": "Budget de l'État"
+    },
+    "financier": {
+      "budget_global": { "valeur": 25000000, "text": "25 000 000 FCFA" },
+      "caution_global": { "valeur": 500000, "text": "500 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["java", "spring boot", "postgresql", "dashboard"]
+    },
+    "nom_fichier": "syn_go_001.pdf"
+  },
+  {
+    "_comment": "GO — petit budget, stack web",
+    "administratif": {
+      "reference": "SYN-GO-002",
+      "objet": "Création d'une application web de gestion des ressources humaines",
+      "maitre_ouvrage": "MINFI",
+      "financement": "BIP"
+    },
+    "financier": {
+      "budget_global": { "valeur": 18000000, "text": "18 000 000 FCFA" },
+      "caution_global": { "valeur": 300000, "text": "300 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["dashboard", "web", "javascript"]
+    },
+    "nom_fichier": "syn_go_002.pdf"
+  },
+  {
+    "_comment": "GO — budget moyen, intelligence artificielle",
+    "administratif": {
+      "reference": "SYN-GO-003",
+      "objet": "Mise en place d'une solution de data science et intelligence artificielle pour l'analyse des données fiscales",
+      "maitre_ouvrage": "Direction Générale des Impôts",
+      "financement": "Budget souverain"
+    },
+    "financier": {
+      "budget_global": { "valeur": 55000000, "text": "55 000 000 FCFA" },
+      "caution_global": { "valeur": 1100000, "text": "1 100 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["intelligence artificielle", "big data", "python", "dashboard"]
+    },
+    "nom_fichier": "syn_go_003.pdf"
+  },
+  {
+    "_comment": "GO — big data, budget confortable",
+    "administratif": {
+      "reference": "SYN-GO-004",
+      "objet": "Déploiement d'une plateforme big data pour le traitement des données douanières",
+      "maitre_ouvrage": "Direction Générale des Douanes",
+      "financement": "FMI"
+    },
+    "financier": {
+      "budget_global": { "valeur": 80000000, "text": "80 000 000 FCFA" },
+      "caution_global": { "valeur": 1600000, "text": "1 600 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["big data", "java", "spring boot", "web scraping"]
+    },
+    "nom_fichier": "syn_go_004.pdf"
+  },
+  {
+    "_comment": "GO — infrastructure informatique",
+    "administratif": {
+      "reference": "SYN-GO-005",
+      "objet": "Fourniture et installation d'une infrastructure informatique pour le siège du MINPOSTEL",
+      "maitre_ouvrage": "MINPOSTEL",
+      "financement": "BIP"
+    },
+    "financier": {
+      "budget_global": { "valeur": 45000000, "text": "45 000 000 FCFA" },
+      "caution_global": { "valeur": 900000, "text": "900 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["infrastructure", "réseau", "serveur"]
+    },
+    "nom_fichier": "syn_go_005.pdf"
+  },
+  {
+    "_comment": "GO — application mobile",
+    "administratif": {
+      "reference": "SYN-GO-006",
+      "objet": "Développement d'une application mobile de collecte de données terrain pour l'INS",
+      "maitre_ouvrage": "Institut National de la Statistique",
+      "financement": "Banque Mondiale"
+    },
+    "financier": {
+      "budget_global": { "valeur": 30000000, "text": "30 000 000 FCFA" },
+      "caution_global": { "valeur": 600000, "text": "600 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["mobile", "android", "dashboard", "big data"]
+    },
+    "nom_fichier": "syn_go_006.pdf"
+  },
+  {
+    "_comment": "GO — web scraping et monitoring",
+    "administratif": {
+      "reference": "SYN-GO-007",
+      "objet": "Mise en place d'un système de veille et monitoring des marchés publics par web scraping",
+      "maitre_ouvrage": "ARMP",
+      "financement": "Budget propre"
+    },
+    "financier": {
+      "budget_global": { "valeur": 20000000, "text": "20 000 000 FCFA" },
+      "caution_global": { "valeur": 400000, "text": "400 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["web scraping", "python", "dashboard", "intelligence artificielle"]
+    },
+    "nom_fichier": "syn_go_007.pdf"
+  },
+  {
+    "_comment": "GO — système d'information géographique",
+    "administratif": {
+      "reference": "SYN-GO-008",
+      "objet": "Développement d'un système d'information géographique pour la cartographie du réseau routier",
+      "maitre_ouvrage": "MINTP",
+      "financement": "C2D"
+    },
+    "financier": {
+      "budget_global": { "valeur": 70000000, "text": "70 000 000 FCFA" },
+      "caution_global": { "valeur": 1400000, "text": "1 400 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["java", "spring boot", "postgresql", "dashboard"]
+    },
+    "nom_fichier": "syn_go_008.pdf"
+  },
+  {
+    "_comment": "GO — cybersécurité, budget moyen",
+    "administratif": {
+      "reference": "SYN-GO-009",
+      "objet": "Audit et mise en conformité de la sécurité informatique du MINSANTE",
+      "maitre_ouvrage": "MINSANTE",
+      "financement": "OMS"
+    },
+    "financier": {
+      "budget_global": { "valeur": 35000000, "text": "35 000 000 FCFA" },
+      "caution_global": { "valeur": 700000, "text": "700 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["cybersécurité", "audit", "infrastructure", "java"]
+    },
+    "nom_fichier": "syn_go_009.pdf"
+  },
+  {
+    "_comment": "GO — ERP / logiciel de gestion",
+    "administratif": {
+      "reference": "SYN-GO-010",
+      "objet": "Acquisition et déploiement d'un logiciel de gestion intégrée ERP pour la CAMWATER",
+      "maitre_ouvrage": "CAMWATER",
+      "financement": "Fonds propres CAMWATER"
+    },
+    "financier": {
+      "budget_global": { "valeur": 100000000, "text": "100 000 000 FCFA" },
+      "caution_global": { "valeur": 2000000, "text": "2 000 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["java", "spring boot", "big data", "dashboard"]
+    },
+    "nom_fichier": "syn_go_010.pdf"
+  },
+  {
+    "_comment": "GO — formation et transformation numérique",
+    "administratif": {
+      "reference": "SYN-GO-011",
+      "objet": "Prestation de formation en transformation numérique pour les agents de l'État",
+      "maitre_ouvrage": "MINFOPRA",
+      "financement": "BIP"
+    },
+    "financier": {
+      "budget_global": { "valeur": 15000000, "text": "15 000 000 FCFA" },
+      "caution_global": { "valeur": 250000, "text": "250 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["formation", "numérique", "intelligence artificielle"]
+    },
+    "nom_fichier": "syn_go_011.pdf"
+  },
+  {
+    "_comment": "GO — portail e-gouvernement",
+    "administratif": {
+      "reference": "SYN-GO-012",
+      "objet": "Développement et maintenance d'un portail e-gouvernement pour les services en ligne aux citoyens",
+      "maitre_ouvrage": "Présidence de la République",
+      "financement": "BIP prioritaire"
+    },
+    "financier": {
+      "budget_global": { "valeur": 90000000, "text": "90 000 000 FCFA" },
+      "caution_global": { "valeur": 1800000, "text": "1 800 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["java", "spring boot", "web", "dashboard", "big data"]
+    },
+    "nom_fichier": "syn_go_012.pdf"
+  },
+  {
+    "_comment": "GO — borderline ratio_ca (budget = 120M, ratio_ca = 100/60 = 1.67)",
+    "administratif": {
+      "reference": "SYN-GO-013",
+      "objet": "Déploiement d'une solution de surveillance réseau et NOC pour le MINPOSTEL",
+      "maitre_ouvrage": "MINPOSTEL",
+      "financement": "UIT"
+    },
+    "financier": {
+      "budget_global": { "valeur": 120000000, "text": "120 000 000 FCFA" },
+      "caution_global": { "valeur": 2400000, "text": "2 400 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["infrastructure", "réseau", "monitoring", "java"]
+    },
+    "nom_fichier": "syn_go_013.pdf"
+  },
+  {
+    "_comment": "GO — digitalisation cadastre",
+    "administratif": {
+      "reference": "SYN-GO-014",
+      "objet": "Numérisation et digitalisation du cadastre foncier national",
+      "maitre_ouvrage": "MINDCAF",
+      "financement": "Banque Africaine de Développement"
+    },
+    "financier": {
+      "budget_global": { "valeur": 60000000, "text": "60 000 000 FCFA" },
+      "caution_global": { "valeur": 1200000, "text": "1 200 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["big data", "java", "spring boot", "dashboard"]
+    },
+    "nom_fichier": "syn_go_014.pdf"
+  },
+  {
+    "_comment": "GO — cloud et hébergement",
+    "administratif": {
+      "reference": "SYN-GO-015",
+      "objet": "Migration vers une infrastructure cloud privée pour les services numériques de la SONARA",
+      "maitre_ouvrage": "SONARA",
+      "financement": "Fonds propres"
+    },
+    "financier": {
+      "budget_global": { "valeur": 50000000, "text": "50 000 000 FCFA" },
+      "caution_global": { "valeur": 1000000, "text": "1 000 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["cloud", "infrastructure", "java", "spring boot"]
+    },
+    "nom_fichier": "syn_go_015.pdf"
+  },
+  {
+    "_comment": "NO-GO — budget très élevé : ratio_ca = 100M/(300M*0.5) = 0.67 < 1",
+    "administratif": {
+      "reference": "SYN-NOGO-001",
+      "objet": "Développement du système national d'information sanitaire intégré — phase 2",
+      "maitre_ouvrage": "MINSANTE",
+      "financement": "Banque Mondiale / IDA"
+    },
+    "financier": {
+      "budget_global": { "valeur": 300000000, "text": "300 000 000 FCFA" },
+      "caution_global": { "valeur": 6000000, "text": "6 000 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["java", "spring boot", "big data", "dashboard"]
+    },
+    "nom_fichier": "syn_nogo_001.pdf"
+  },
+  {
+    "_comment": "NO-GO — budget gigantesque : ratio_ca = 100M/(500M*0.5) = 0.4",
+    "administratif": {
+      "reference": "SYN-NOGO-002",
+      "objet": "Déploiement de l'infrastructure numérique nationale haut débit — backbone fibre optique",
+      "maitre_ouvrage": "CAMTEL",
+      "financement": "Exim Bank Chine"
+    },
+    "financier": {
+      "budget_global": { "valeur": 500000000, "text": "500 000 000 FCFA" },
+      "caution_global": { "valeur": 10000000, "text": "10 000 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["infrastructure", "réseau", "télécommunication"]
+    },
+    "nom_fichier": "syn_nogo_002.pdf"
+  },
+  {
+    "_comment": "NO-GO — budget = 250M, ratio_credit = 25M/(250M*0.2) = 0.5 < 1",
+    "administratif": {
+      "reference": "SYN-NOGO-003",
+      "objet": "Mise en place du système de paiement électronique interopérable national",
+      "maitre_ouvrage": "BEAC",
+      "financement": "COBAC"
+    },
+    "financier": {
+      "budget_global": { "valeur": 250000000, "text": "250 000 000 FCFA" },
+      "caution_global": { "valeur": 5000000, "text": "5 000 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["java", "spring boot", "sécurité", "fintech"]
+    },
+    "nom_fichier": "syn_nogo_003.pdf"
+  },
+  {
+    "_comment": "NO-GO — caution très lourde : poids = 8M/15M = 0.53 >= 0.2",
+    "administratif": {
+      "reference": "SYN-NOGO-004",
+      "objet": "Plateforme nationale de gestion des identités biométriques",
+      "maitre_ouvrage": "MINAT",
+      "financement": "PNUD"
+    },
+    "financier": {
+      "budget_global": { "valeur": 80000000, "text": "80 000 000 FCFA" },
+      "caution_global": { "valeur": 8000000, "text": "8 000 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["big data", "intelligence artificielle", "java"]
+    },
+    "nom_fichier": "syn_nogo_004.pdf"
+  },
+  {
+    "_comment": "NO-GO — caution prohibitive : poids = 12M/15M = 0.8",
+    "administratif": {
+      "reference": "SYN-NOGO-005",
+      "objet": "Développement d'un système de télésurveillance urbaine avec IA",
+      "maitre_ouvrage": "CUD",
+      "financement": "FEICOM"
+    },
+    "financier": {
+      "budget_global": { "valeur": 60000000, "text": "60 000 000 FCFA" },
+      "caution_global": { "valeur": 12000000, "text": "12 000 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["intelligence artificielle", "surveillance", "réseau"]
+    },
+    "nom_fichier": "syn_nogo_005.pdf"
+  },
+  {
+    "_comment": "NO-GO — budget = 400M, les trois ratios échouent",
+    "administratif": {
+      "reference": "SYN-NOGO-006",
+      "objet": "Système intégré de gestion des finances publiques — SIGFIP phase 3",
+      "maitre_ouvrage": "MINFI",
+      "financement": "FMI / Banque Mondiale"
+    },
+    "financier": {
+      "budget_global": { "valeur": 400000000, "text": "400 000 000 FCFA" },
+      "caution_global": { "valeur": 8000000, "text": "8 000 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["java", "spring boot", "big data", "dashboard"]
+    },
+    "nom_fichier": "syn_nogo_006.pdf"
+  },
+  {
+    "_comment": "NO-GO — caution élevée même pour budget modéré : poids = 5M/15M = 0.33",
+    "administratif": {
+      "reference": "SYN-NOGO-007",
+      "objet": "Fourniture d'équipements informatiques sécurisés pour la Gendarmerie Nationale",
+      "maitre_ouvrage": "MINDEF",
+      "financement": "Budget défense"
+    },
+    "financier": {
+      "budget_global": { "valeur": 40000000, "text": "40 000 000 FCFA" },
+      "caution_global": { "valeur": 5000000, "text": "5 000 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["cybersécurité", "infrastructure", "réseau"]
+    },
+    "nom_fichier": "syn_nogo_007.pdf"
+  },
+  {
+    "_comment": "NO-GO — budget = 180M, ratio_credit = 25M/(180M*0.2) = 0.69 < 1",
+    "administratif": {
+      "reference": "SYN-NOGO-008",
+      "objet": "Refonte du système de gestion académique des universités d'État",
+      "maitre_ouvrage": "MINESUP",
+      "financement": "Banque Islamique de Développement"
+    },
+    "financier": {
+      "budget_global": { "valeur": 180000000, "text": "180 000 000 FCFA" },
+      "caution_global": { "valeur": 3600000, "text": "3 600 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["java", "spring boot", "dashboard", "web"]
+    },
+    "nom_fichier": "syn_nogo_008.pdf"
+  },
+  {
+    "_comment": "NO-GO — budget = 350M, tous les ratios dans le rouge",
+    "administratif": {
+      "reference": "SYN-NOGO-009",
+      "objet": "Déploiement d'un centre de données national (datacenter souverain)",
+      "maitre_ouvrage": "ANTIC",
+      "financement": "BAD"
+    },
+    "financier": {
+      "budget_global": { "valeur": 350000000, "text": "350 000 000 FCFA" },
+      "caution_global": { "valeur": 7000000, "text": "7 000 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["infrastructure", "cloud", "sécurité", "big data"]
+    },
+    "nom_fichier": "syn_nogo_009.pdf"
+  },
+  {
+    "_comment": "NO-GO — caution = 4M, poids = 4/15 = 0.27 >= 0.2, malgré budget raisonnable",
+    "administratif": {
+      "reference": "SYN-NOGO-010",
+      "objet": "Acquisition d'un logiciel de gestion de la chaîne logistique pour SNH",
+      "maitre_ouvrage": "SNH",
+      "financement": "Fonds propres SNH"
+    },
+    "financier": {
+      "budget_global": { "valeur": 55000000, "text": "55 000 000 FCFA" },
+      "caution_global": { "valeur": 4000000, "text": "4 000 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["java", "spring boot", "ERP", "dashboard"]
+    },
+    "nom_fichier": "syn_nogo_010.pdf"
+  }
+]

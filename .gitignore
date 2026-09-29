@@ -1,0 +1,18 @@
+# Dependances Node
+node_modules/
+dist/
+.next/
+build/
+
+# Python cache et venv
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Environnement et IDE
+.env
+.env.local
+.idea/
+.vscode/

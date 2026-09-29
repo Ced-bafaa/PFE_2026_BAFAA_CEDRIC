@@ -1,0 +1,15 @@
+# Artefacts locaux à ne pas copier dans l'image
+__pycache__/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+env/
+*.ps1
+*.bat
+# Données d'entraînement volumineuses (le modèle .pkl, lui, est conservé)
+data/training/
+data/processed/
+notebooks/
+.ipynb_checkpoints/

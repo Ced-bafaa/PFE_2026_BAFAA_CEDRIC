@@ -1,0 +1,48 @@
+{
+  "globalKeywords": [],
+  "sources": [
+    {
+      "id": "SRC-1782391308030",
+      "title": "Test Source",
+      "url": "http://example.com",
+      "active": false,
+      "keywords": []
+    },
+    {
+      "id": "SRC-001",
+      "title": "ARMP Cameroun — Appels d'offres nationaux",
+      "url": "https://www.armp.cm/filtres?type=avis&val=1",
+      "active": true,
+      "keywords": []
+    },
+    {
+      "id": "SRC-002",
+      "title": "ARMP Cameroun — Appels d'offres internationaux",
+      "url": "https://www.armp.cm/filtres?type=avis&val=4",
+      "active": true,
+      "keywords": []
+    },
+    {
+      "id": "SRC-003",
+      "title": "ARMP Cameroun — Demandes de cotation",
+      "url": "https://www.armp.cm/filtres?type=avis&val=5",
+      "active": true,
+      "keywords": []
+    },
+    {
+      "id": "SRC-004",
+      "title": "ARMP Cameroun — Appels à manifestation d'intérêt (AMI)",
+      "url": "https://www.armp.cm/filtres?type=avis&val=12",
+      "active": true,
+      "keywords": []
+    },
+    {
+      "id": "SRC-005",
+      "title": "ARMP Cameroun — Demandes de proposition (DP)",
+      "url": "https://www.armp.cm/filtres?type=avis&val=7",
+      "active": true,
+      "keywords": []
+    }
+  ],
+  "companyDescription": "Entreprise spécialisée en systèmes d'information, développement logiciel, intelligence artificielle et transformation numérique."
+}

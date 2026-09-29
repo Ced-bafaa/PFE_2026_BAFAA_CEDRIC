@@ -1,0 +1,400 @@
+{
+  "past_projects_keywords": [
+    "architecture si",
+    "java",
+    "spring boot",
+    "api rest",
+    "gestion de projet",
+    "marchés publics",
+    "cybersécurité",
+    "amoa",
+    "prince2",
+    "conduite du changement",
+    "rédaction technique",
+    "docker",
+    "kubernetes",
+    "aws",
+    "ci/cd",
+    "linux",
+    "node.js",
+    "virtualisation",
+    "react",
+    "typescript",
+    "postgresql",
+    "application mobile",
+    "application web",
+    "python",
+    "spark",
+    "power bi",
+    "big data",
+    "machine learning",
+    "nlp",
+    "pentest",
+    "siem",
+    "iso 27001",
+    "gestion des vulnérabilités",
+    "firewall",
+    "réseau lan",
+    "datacenter",
+    "matériel informatique",
+    "ordinateurs",
+    "serveurs",
+    "imprimantes",
+    "scanners",
+    "onduleurs",
+    "installation et configuration",
+    "câblage réseau",
+    "parc informatique"
+  ],
+  "it_keywords": [
+    "informatiq",
+    "numérique",
+    "digital",
+    "technologi",
+    "cyber",
+    "télécommunication",
+    "télécom",
+    "TIC",
+    "logiciel",
+    "software",
+    "application mobile",
+    "application web",
+    "application informatique",
+    "application de gestion",
+    "application de suivi",
+    "système d'information",
+    "système informatique",
+    "plateforme numérique",
+    "plateforme informatique",
+    "plateforme web",
+    "plateforme digitale",
+    "plateforme de gestion",
+    "portail web",
+    "portail numérique",
+    "portail en ligne",
+    "site web",
+    "intranet",
+    "extranet",
+    "e-gouvern",
+    "e-service",
+    "e-administration",
+    "ERP",
+    "SIGFIP",
+    "SIGIPES",
+    "CENADI",
+    "ANTIC",
+    "CAMTEL",
+    "SYSTAC",
+    "GUCE",
+    "MINPOSTEL",
+    "solution informatique",
+    "solution numérique",
+    "solution digitale",
+    "acquisition de matériel informatique",
+    "fourniture de matériel informatique",
+    "fourniture et installation de matériel informatique",
+    "support informatique",
+    "support technique informatique",
+    "assistance informatique",
+    "assistance technique informatique",
+    "câblage informatique",
+    "câblage réseau",
+    "base de données",
+    "database",
+    "datacenter",
+    "data center",
+    "développement de logiciel",
+    "développement d'application",
+    "développement de système",
+    "développement de plateforme",
+    "conception de logiciel",
+    "conception de système",
+    "déploiement de logiciel",
+    "déploiement de système",
+    "intégration de système",
+    "migration informatique",
+    "informatisation",
+    "numérisation",
+    "digitalisation",
+    "dématérialisati",
+    "réseau informatique",
+    "réseau local",
+    "réseau LAN",
+    "réseau WAN",
+    "fibre optique",
+    "haut débit",
+    "très haut débit",
+    "infrastructure informatique",
+    "infrastructure IT",
+    "infrastructure numérique",
+    "serveur informatique",
+    "serveur web",
+    "serveur applicatif",
+    "cloud computing",
+    "cloud informatique",
+    "cloud privé",
+    "cloud public",
+    "virtualisation",
+    "hébergement web",
+    "hébergement serveur",
+    "parc informatique",
+    "maintenance informatique",
+    "matériel informatique",
+    "équipement informatique",
+    "ordinateur",
+    "laptop",
+    "tablette numérique",
+    "switch réseau",
+    "routeur informatique",
+    "firewall",
+    "pare-feu informatique",
+    "sauvegarde informatique",
+    "backup informatique",
+    "intelligence artificielle",
+    "machine learning",
+    "big data",
+    "data science",
+    "business intelligence",
+    "cybersécurité",
+    "sécurité informatique",
+    "sécurité des systèmes d'information",
+    "audit informatique",
+    "audit de sécurité informatique",
+    "schéma directeur informatique",
+    "pentest",
+    "formation en informatique",
+    "formation informatique",
+    "formation numérique",
+    "formation cybersécurité",
+    "IT equipment",
+    "IT support",
+    "IT services",
+    "IT infrastructure",
+    "information system",
+    "information technology",
+    "computer equipment",
+    "software development",
+    "network equipment",
+    "ICT",
+    "connectivity internet",
+    "accès internet",
+    "imprimantes"
+  ],
+  "personnel": [
+    {
+      "name": "Serge KIAMA",
+      "role": "Directeur Technique / Architecte SI",
+      "certifications": [
+        "PMP",
+        "ISO/IEC 27001 Lead Implementer",
+        "TOGAF 9"
+      ],
+      "years_experience": 14,
+      "skills": [
+        "architecture SI",
+        "java",
+        "spring boot",
+        "api rest",
+        "gestion de projet",
+        "marchés publics",
+        "cybersécurité"
+      ],
+      "diplomas": [
+        {
+          "degree": "Ingénieur",
+          "field": "Génie Logiciel",
+          "years_experience": 14
+        }
+      ],
+      "location": "Yaoundé",
+      "availability": "Disponible",
+      "daily_rate_fcfa": 180000,
+      "projects_count": 24,
+      "success_rate": 96
+    },
+    {
+      "name": "Christelle MBARGA",
+      "role": "Cheffe de projet / Consultante AMOA",
+      "certifications": [
+        "PMP",
+        "PRINCE2 Practitioner"
+      ],
+      "years_experience": 11,
+      "skills": [
+        "gestion de projet",
+        "amoa",
+        "prince2",
+        "conduite du changement",
+        "rédaction technique",
+        "marchés publics"
+      ],
+      "diplomas": [
+        {
+          "degree": "Master",
+          "field": "Management des Systèmes d'Information",
+          "years_experience": 11
+        }
+      ],
+      "location": "Yaoundé",
+      "availability": "Disponible",
+      "daily_rate_fcfa": 150000,
+      "projects_count": 18,
+      "success_rate": 95
+    },
+    {
+      "name": "Alvine NDJOMO",
+      "role": "Ingénieure Cloud & DevOps",
+      "certifications": [
+        "AWS Certified Solutions Architect",
+        "Certified Kubernetes Administrator (CKA)"
+      ],
+      "years_experience": 9,
+      "skills": [
+        "docker",
+        "kubernetes",
+        "aws",
+        "ci/cd",
+        "linux",
+        "node.js",
+        "virtualisation"
+      ],
+      "diplomas": [
+        {
+          "degree": "Ingénieur",
+          "field": "Informatique — Réseaux & Systèmes",
+          "years_experience": 9
+        }
+      ],
+      "location": "Douala",
+      "availability": "Disponible",
+      "daily_rate_fcfa": 140000,
+      "projects_count": 15,
+      "success_rate": 94
+    },
+    {
+      "name": "Diane FOUDA",
+      "role": "Développeuse Full-Stack & Mobile",
+      "certifications": [
+        "Professional Scrum Master (PSM I)"
+      ],
+      "years_experience": 7,
+      "skills": [
+        "react",
+        "node.js",
+        "typescript",
+        "api rest",
+        "postgresql",
+        "application mobile",
+        "application web"
+      ],
+      "diplomas": [
+        {
+          "degree": "Master",
+          "field": "Génie Logiciel",
+          "years_experience": 7
+        }
+      ],
+      "location": "Yaoundé",
+      "availability": "Disponible",
+      "daily_rate_fcfa": 110000,
+      "projects_count": 12,
+      "success_rate": 93
+    },
+    {
+      "name": "Boris ESSAMA",
+      "role": "Ingénieur Data & Business Intelligence",
+      "certifications": [
+        "Microsoft Certified: Power BI Data Analyst"
+      ],
+      "years_experience": 8,
+      "skills": [
+        "python",
+        "spark",
+        "power bi",
+        "big data",
+        "machine learning",
+        "postgresql",
+        "nlp"
+      ],
+      "diplomas": [
+        {
+          "degree": "Master",
+          "field": "Data Science",
+          "years_experience": 8
+        }
+      ],
+      "location": "Yaoundé",
+      "availability": "Disponible",
+      "daily_rate_fcfa": 130000,
+      "projects_count": 11,
+      "success_rate": 92
+    },
+    {
+      "name": "Rodrigue ATANGANA",
+      "role": "Expert Cybersécurité & Infrastructure",
+      "certifications": [
+        "CEH",
+        "ISO/IEC 27001 Lead Auditor",
+        "Agrément ANTIC"
+      ],
+      "years_experience": 10,
+      "skills": [
+        "pentest",
+        "siem",
+        "iso 27001",
+        "gestion des vulnérabilités",
+        "firewall",
+        "réseau lan",
+        "datacenter"
+      ],
+      "diplomas": [
+        {
+          "degree": "Ingénieur",
+          "field": "Cybersécurité",
+          "years_experience": 10
+        }
+      ],
+      "location": "Yaoundé",
+      "availability": "Disponible",
+      "daily_rate_fcfa": 160000,
+      "projects_count": 14,
+      "success_rate": 97
+    },
+    {
+      "name": "Patrick NDONGO",
+      "role": "Ingénieur Déploiement & Matériel Informatique",
+      "certifications": [
+        "CompTIA A+",
+        "Cisco CCNA"
+      ],
+      "years_experience": 8,
+      "skills": [
+        "matériel informatique",
+        "ordinateurs",
+        "serveurs",
+        "imprimantes",
+        "scanners",
+        "onduleurs",
+        "installation et configuration",
+        "câblage réseau",
+        "parc informatique"
+      ],
+      "diplomas": [
+        {
+          "degree": "Ingénieur",
+          "field": "Informatique — Systèmes & Réseaux",
+          "years_experience": 8
+        }
+      ],
+      "location": "Yaoundé",
+      "availability": "Disponible",
+      "daily_rate_fcfa": 90000,
+      "projects_count": 16,
+      "success_rate": 95
+    }
+  ],
+  "annual_revenue": 1200000000,
+  "available_cash": 250000000,
+  "credit_line": 400000000,
+  "description": "Entreprise spécialisée en systèmes d'information, développement logiciel, intelligence artificielle et transformation numérique."
+}

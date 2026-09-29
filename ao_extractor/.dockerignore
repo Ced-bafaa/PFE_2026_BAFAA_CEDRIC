@@ -1,0 +1,14 @@
+# Artefacts locaux à ne pas copier dans l'image
+__pycache__/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+env/
+*.ps1
+*.bat
+# Données volumineuses / transitoires : inutiles dans l'image API
+data/
+processed/
+output/

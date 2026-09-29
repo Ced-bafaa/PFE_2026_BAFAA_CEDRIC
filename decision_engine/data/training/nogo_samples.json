@@ -1,0 +1,257 @@
+[
+  {
+    "_comment": "NO-GO explicite — budget 300M, ratio_ca=0.67, caution lourde",
+    "label_decision": 0,
+    "administratif": {
+      "reference": "KIAMA-NOGO-T01",
+      "objet": "Développement du système national d'information sanitaire intégré phase 2",
+      "maitre_ouvrage": "MINSANTE",
+      "financement": "Banque Mondiale / IDA"
+    },
+    "financier": {
+      "budget_global": { "valeur": 300000000, "text": "300 000 000 FCFA" },
+      "caution_global": { "valeur": 6000000, "text": "6 000 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["java", "spring boot", "big data", "dashboard"]
+    }
+  },
+  {
+    "_comment": "NO-GO explicite — budget 500M, ratio_ca=0.4",
+    "label_decision": 0,
+    "administratif": {
+      "reference": "KIAMA-NOGO-T02",
+      "objet": "Déploiement infrastructure numérique nationale haut débit — backbone fibre optique",
+      "maitre_ouvrage": "CAMTEL",
+      "financement": "Exim Bank Chine"
+    },
+    "financier": {
+      "budget_global": { "valeur": 500000000, "text": "500 000 000 FCFA" },
+      "caution_global": { "valeur": 10000000, "text": "10 000 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["infrastructure", "réseau", "télécommunication"]
+    }
+  },
+  {
+    "_comment": "NO-GO explicite — budget 250M, ratio_credit=0.5",
+    "label_decision": 0,
+    "administratif": {
+      "reference": "KIAMA-NOGO-T03",
+      "objet": "Mise en place du système de paiement électronique interopérable national",
+      "maitre_ouvrage": "BEAC",
+      "financement": "COBAC"
+    },
+    "financier": {
+      "budget_global": { "valeur": 250000000, "text": "250 000 000 FCFA" },
+      "caution_global": { "valeur": 5000000, "text": "5 000 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["java", "spring boot", "sécurité", "fintech"]
+    }
+  },
+  {
+    "_comment": "NO-GO explicite — caution=8M, poids_caution=0.53 >= 0.2",
+    "label_decision": 0,
+    "administratif": {
+      "reference": "KIAMA-NOGO-T04",
+      "objet": "Plateforme nationale de gestion des identités biométriques",
+      "maitre_ouvrage": "MINAT",
+      "financement": "PNUD"
+    },
+    "financier": {
+      "budget_global": { "valeur": 80000000, "text": "80 000 000 FCFA" },
+      "caution_global": { "valeur": 8000000, "text": "8 000 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["big data", "intelligence artificielle", "java"]
+    }
+  },
+  {
+    "_comment": "NO-GO explicite — caution=12M, poids_caution=0.8",
+    "label_decision": 0,
+    "administratif": {
+      "reference": "KIAMA-NOGO-T05",
+      "objet": "Développement système de télésurveillance urbaine avec IA",
+      "maitre_ouvrage": "CUD",
+      "financement": "FEICOM"
+    },
+    "financier": {
+      "budget_global": { "valeur": 60000000, "text": "60 000 000 FCFA" },
+      "caution_global": { "valeur": 12000000, "text": "12 000 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["intelligence artificielle", "surveillance", "réseau"]
+    }
+  },
+  {
+    "_comment": "NO-GO explicite — budget 400M, tous les ratios échouent",
+    "label_decision": 0,
+    "administratif": {
+      "reference": "KIAMA-NOGO-T06",
+      "objet": "Système intégré de gestion des finances publiques SIGFIP phase 3",
+      "maitre_ouvrage": "MINFI",
+      "financement": "FMI / Banque Mondiale"
+    },
+    "financier": {
+      "budget_global": { "valeur": 400000000, "text": "400 000 000 FCFA" },
+      "caution_global": { "valeur": 8000000, "text": "8 000 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["java", "spring boot", "big data", "dashboard"]
+    }
+  },
+  {
+    "_comment": "NO-GO explicite — caution=5M, poids_caution=0.33 >= 0.2",
+    "label_decision": 0,
+    "administratif": {
+      "reference": "KIAMA-NOGO-T07",
+      "objet": "Fourniture équipements informatiques sécurisés pour la Gendarmerie Nationale",
+      "maitre_ouvrage": "MINDEF",
+      "financement": "Budget défense"
+    },
+    "financier": {
+      "budget_global": { "valeur": 40000000, "text": "40 000 000 FCFA" },
+      "caution_global": { "valeur": 5000000, "text": "5 000 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["infrastructure", "sécurité", "réseau"]
+    }
+  },
+  {
+    "_comment": "NO-GO explicite — budget 350M, ratio_ca=100M/175M=0.57",
+    "label_decision": 0,
+    "administratif": {
+      "reference": "KIAMA-NOGO-T08",
+      "objet": "Déploiement système de gestion électronique des douanes — SYDONIA phase 4",
+      "maitre_ouvrage": "Direction Générale des Douanes",
+      "financement": "BAD"
+    },
+    "financier": {
+      "budget_global": { "valeur": 350000000, "text": "350 000 000 FCFA" },
+      "caution_global": { "valeur": 7000000, "text": "7 000 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["java", "spring boot", "web scraping", "dashboard"]
+    }
+  },
+  {
+    "_comment": "NO-GO explicite — caution=9M, poids_caution=0.6",
+    "label_decision": 0,
+    "administratif": {
+      "reference": "KIAMA-NOGO-T09",
+      "objet": "Plateforme de e-gouvernement et digitalisation des services administratifs",
+      "maitre_ouvrage": "MINFOPRA",
+      "financement": "Union Européenne"
+    },
+    "financier": {
+      "budget_global": { "valeur": 90000000, "text": "90 000 000 FCFA" },
+      "caution_global": { "valeur": 9000000, "text": "9 000 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["dashboard", "web", "intelligence artificielle"]
+    }
+  },
+  {
+    "_comment": "NO-GO explicite — budget 200M, ratio_credit=25M/40M=0.625 < 1",
+    "label_decision": 0,
+    "administratif": {
+      "reference": "KIAMA-NOGO-T10",
+      "objet": "Système d'information intégré pour la gestion du cadastre national",
+      "maitre_ouvrage": "MINDCAF",
+      "financement": "Banque Africaine de Développement"
+    },
+    "financier": {
+      "budget_global": { "valeur": 200000000, "text": "200 000 000 FCFA" },
+      "caution_global": { "valeur": 4000000, "text": "4 000 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["java", "spring boot", "big data", "dashboard"]
+    }
+  },
+  {
+    "_comment": "NO-GO explicite — caution=4.5M, poids_caution=0.3",
+    "label_decision": 0,
+    "administratif": {
+      "reference": "KIAMA-NOGO-T11",
+      "objet": "Fourniture et déploiement système de vidéosurveillance intelligent aéroport NSI",
+      "maitre_ouvrage": "ADC",
+      "financement": "Budget investissement"
+    },
+    "financier": {
+      "budget_global": { "valeur": 75000000, "text": "75 000 000 FCFA" },
+      "caution_global": { "valeur": 4500000, "text": "4 500 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["intelligence artificielle", "surveillance", "réseau"]
+    }
+  },
+  {
+    "_comment": "NO-GO explicite — budget 450M, ratio_ca=100M/225M=0.44",
+    "label_decision": 0,
+    "administratif": {
+      "reference": "KIAMA-NOGO-T12",
+      "objet": "Déploiement infrastructure cloud souverain national",
+      "maitre_ouvrage": "ANTIC",
+      "financement": "Prêt concessionnel"
+    },
+    "financier": {
+      "budget_global": { "valeur": 450000000, "text": "450 000 000 FCFA" },
+      "caution_global": { "valeur": 9000000, "text": "9 000 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["cloud", "infrastructure", "java", "big data"]
+    }
+  },
+  {
+    "_comment": "NO-GO explicite — caution=6M sur budget 50M, poids=0.4",
+    "label_decision": 0,
+    "administratif": {
+      "reference": "KIAMA-NOGO-T13",
+      "objet": "Système de gestion des ressources humaines de la fonction publique",
+      "maitre_ouvrage": "MINFOPRA",
+      "financement": "BIP 2024"
+    },
+    "financier": {
+      "budget_global": { "valeur": 50000000, "text": "50 000 000 FCFA" },
+      "caution_global": { "valeur": 6000000, "text": "6 000 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["java", "spring boot", "dashboard", "web"]
+    }
+  },
+  {
+    "_comment": "NO-GO explicite — budget 160M, ratio_credit=25M/32M=0.78 < 1",
+    "label_decision": 0,
+    "administratif": {
+      "reference": "KIAMA-NOGO-T14",
+      "objet": "Modernisation du système de gestion fiscale — MESURE phase 2",
+      "maitre_ouvrage": "DGI",
+      "financement": "FMI"
+    },
+    "financier": {
+      "budget_global": { "valeur": 160000000, "text": "160 000 000 FCFA" },
+      "caution_global": { "valeur": 3200000, "text": "3 200 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["java", "spring boot", "big data", "intelligence artificielle"]
+    }
+  },
+  {
+    "_comment": "NO-GO explicite — caution=10M sur budget 100M, poids=0.67",
+    "label_decision": 0,
+    "administratif": {
+      "reference": "KIAMA-NOGO-T15",
+      "objet": "Plateforme nationale de lutte contre la cybercriminalité",
+      "maitre_ouvrage": "MINPOSTEL / ANTIC",
+      "financement": "Budget souverain"
+    },
+    "financier": {
+      "budget_global": { "valeur": 100000000, "text": "100 000 000 FCFA" },
+      "caution_global": { "valeur": 10000000, "text": "10 000 000 FCFA" }
+    },
+    "technique": {
+      "tech_stack_keywords": ["sécurité", "intelligence artificielle", "big data", "java"]
+    }
+  }
+]

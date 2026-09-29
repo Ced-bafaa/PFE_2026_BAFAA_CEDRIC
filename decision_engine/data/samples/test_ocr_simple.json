@@ -1,0 +1,20 @@
+{
+  "administratif": {
+    "reference": "N° TEST/MANUEL/2026",
+    "objet": "Développement dashboard big data et intelligence artificielle en Java"
+  },
+  "financier": {
+    "budget_estime": 45000000,
+    "caution": 90000000
+  },
+  "technique": {
+    "tech_stack_keywords": ["java", "spring boot", "postgresql"],
+    "exigences_techniques": {
+      "text": "Minimum 3 ans d'expérience en big data, livrable dashboard sous 60 jours"
+    },
+    "criteres_eliminatoires": [
+      "Absence de références similaires",
+      "Non-respect des spécifications majeures"
+    ]
+  }
+}

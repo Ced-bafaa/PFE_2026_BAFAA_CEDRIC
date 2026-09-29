@@ -1,0 +1,132 @@
+{
+  "info": {
+    "_postman_id": "kiama-backend-collect",
+    "name": "KIAMA Backend (collect)",
+    "description": "Tests API Nest sans lien avec le frontend.\n\n1. Démarrer le serveur : `cd backend` puis `npm run start:dev`\n2. Importer ce fichier dans Postman (Import → fichier)\n3. Vérifier la variable `base_url` (défaut http://localhost:3000)\n\nEndpoints :\n- GET / — contrôle rapide\n- POST /collect/preview — une source\n- POST /collect/run — toutes les sources actives du JSON",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:3000"
+    }
+  ],
+  "item": [
+    {
+      "name": "Santé",
+      "item": [
+        {
+          "name": "GET / (hello Nest)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/",
+            "description": "Vérifie que le serveur répond."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Collect",
+      "item": [
+        {
+          "name": "Preview — flux RSS (exemple BBC)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"source\": {\n    \"id\": \"SRC-RSS-TEST\",\n    \"title\": \"BBC News RSS\",\n    \"url\": \"https://feeds.bbci.co.uk/news/rss.xml\",\n    \"active\": true,\n    \"keywords\": []\n  },\n  \"globalKeywords\": []\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url}}/collect/preview",
+            "description": "Une source dont l’URL est un flux RSS. Réponse : `ok`, `mode: rss`, `items[]`."
+          },
+          "response": []
+        },
+        {
+          "name": "Preview — scraping HTML (example.com)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"source\": {\n    \"id\": \"SRC-SCRAPE-TEST\",\n    \"title\": \"Example.com\",\n    \"url\": \"https://example.com\",\n    \"active\": true,\n    \"collectionMode\": \"scrape\",\n    \"keywords\": []\n  },\n  \"globalKeywords\": []\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url}}/collect/preview",
+            "description": "`collectionMode: scrape` force le mode scraping même si l’URL ne ressemble pas à un flux RSS."
+          },
+          "response": []
+        },
+        {
+          "name": "Preview — mots-clés (filtre)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"source\": {\n    \"id\": \"SRC-RSS-FILTER\",\n    \"title\": \"BBC filtré\",\n    \"url\": \"https://feeds.bbci.co.uk/news/rss.xml\",\n    \"active\": true,\n    \"keywords\": [\"UK\"]\n  },\n  \"globalKeywords\": [\"business\"]\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url}}/collect/preview",
+            "description": "Seuls les items dont titre / URL / résumé contiennent au moins un des mots-clés (source + globaux) sont renvoyés."
+          },
+          "response": []
+        },
+        {
+          "name": "Run — batch (forme type frontend)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"scrapeEvery\": 1,\n  \"scrapeUnit\": \"days\",\n  \"globalKeywords\": [],\n  \"sources\": [\n    {\n      \"id\": \"SRC-001\",\n      \"title\": \"BBC RSS\",\n      \"url\": \"https://feeds.bbci.co.uk/news/rss.xml\",\n      \"active\": true,\n      \"keywords\": []\n    },\n    {\n      \"id\": \"SRC-002\",\n      \"title\": \"Example scrape\",\n      \"url\": \"https://example.com\",\n      \"active\": true,\n      \"collectionMode\": \"scrape\",\n      \"keywords\": []\n    },\n    {\n      \"id\": \"SRC-INACTIVE\",\n      \"title\": \"Ignorée\",\n      \"url\": \"https://example.com\",\n      \"active\": false,\n      \"keywords\": []\n    }\n  ]\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url}}/collect/run",
+            "description": "Traite uniquement les sources avec `active: true`. Réponse : tableau de résultats (un objet par source active)."
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

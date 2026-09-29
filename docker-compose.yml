@@ -1,0 +1,145 @@
+# KIAMA — orchestration des 5 services (Option 2, mode 'api').
+# Lancement : docker compose up -d   |   Logs : docker compose logs -f
+# Variables sensibles (clé Groq, mots de passe) : voir .env (cf. .env.example).
+
+services:
+  # ── Base de données ───────────────────────────────────────────────────────
+  mysql:
+    image: mysql:8.0
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: ${DB_NAME:-v_tech}
+      MYSQL_USER: ${DB_USER:-v_tech}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-v_tech_pwd}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root_pwd}
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${MYSQL_ROOT_PASSWORD:-root_pwd}"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+    networks: [kiama]
+
+  # ── Moteur de décision (MCDA + règles + Groq qualitatif) ─────────────────────
+  decision-engine:
+    image: kiama-decision-engine
+    build: ./decision_engine
+    restart: unless-stopped
+    environment:
+      GROQ_API_KEY: ${GROQ_API_KEY:-}
+      GROQ_MODEL: ${GROQ_MODEL:-openai/gpt-oss-120b}
+      COMPANY_PROFILE_PATH: /app/data/company_profile.json
+      # Filtre de pertinence sémantique (embeddings) — cf. semantic_filter.py
+      SEMANTIC_FILTER_ENABLED: "true"
+      SEMANTIC_CACHE_DIR: /app/model_cache
+    volumes:
+      # Profil entreprise partagé avec le backend (lecture pour le scoring).
+      - ./decision_engine/data:/app/data
+      # Cache du modèle d'embeddings (téléchargé une fois, persistant).
+      - model_cache:/app/model_cache
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8765/health').status==200 else 1)"]
+      interval: 20s
+      timeout: 5s
+      # start_period long : premier démarrage télécharge le modèle (~420 Mo)
+      # Sur connexion lente, le téléchargement peut prendre 5-10 min.
+      start_period: 600s
+      retries: 10
+    networks: [kiama]
+
+  # ── Extracteur DAO (API HTTP, PDF transitoire) ────────────────────────────
+  ao-extractor:
+    image: kiama-ao-extractor
+    build: ./ao_extractor
+    restart: unless-stopped
+    environment:
+      TESSERACT_CMD: /usr/bin/tesseract
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8770/health').status==200 else 1)"]
+      interval: 10s
+      timeout: 5s
+      start_period: 20s
+      retries: 5
+    networks: [kiama]
+
+  # ── Backend NestJS (orchestrateur + API du front) ─────────────────────────
+  backend:
+    image: kiama-backend
+    build: ./backend
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+      decision-engine:
+        condition: service_healthy
+      ao-extractor:
+        condition: service_healthy
+    environment:
+      PORT: "3004"
+      DB_HOST: mysql
+      DB_PORT: "3306"
+      DB_USER: ${DB_USER:-v_tech}
+      DB_PASSWORD: ${DB_PASSWORD:-v_tech_pwd}
+      DB_NAME: ${DB_NAME:-v_tech}
+      DB_LOGGING: "false"
+      # Authentification JWT + comptes initiaux (créés au 1er démarrage).
+      JWT_SECRET: ${JWT_SECRET:-kiama-dev-secret-change-me}
+      JWT_EXPIRES_IN: ${JWT_EXPIRES_IN:-12h}
+      KIAMA_ADMIN_EMAIL: ${KIAMA_ADMIN_EMAIL:-admin@kiama.local}
+      KIAMA_ADMIN_PASSWORD: ${KIAMA_ADMIN_PASSWORD:-Admin#2026}
+      KIAMA_EXPLOITATION_PASSWORD: ${KIAMA_EXPLOITATION_PASSWORD:-Exploit#2026}
+      KIAMA_USER_PASSWORD: ${KIAMA_USER_PASSWORD:-User#2026}
+      # Crée le schéma au premier démarrage (base MySQL vierge). À passer à
+      # "false" + migrations pour une vraie prod.
+      TYPEORM_SYNC: "true"
+      # Collecte automatique planifiée (jours ouvrables à heure fixe).
+      ARMP_SYNC_AUTO: ${ARMP_SYNC_AUTO:-true}
+      ARMP_SYNC_TZ: ${ARMP_SYNC_TZ:-Africa/Douala}   # fuseau IANA
+      ARMP_SYNC_HOUR: ${ARMP_SYNC_HOUR:-8}           # heure 0-23 (defaut 08:00)
+      ARMP_SYNC_DAYS: ${ARMP_SYNC_DAYS:-1,2,3,4,5}   # 0=dim..6=sam (defaut lun-ven)
+      ARMP_MAX_PAGES: "5"
+      DECISION_ENGINE_URL: http://decision-engine:8765
+      AO_EXTRACTOR_URL: http://ao-extractor:8770
+      KIAMA_EXTRACTION_MODE: api
+      # Tri de pertinence : "semantic" (embeddings) ou "keywords" (défaut/repli).
+      RELEVANCE_MODE: semantic
+      DECISION_SCORING_AUTO: "false"
+      # Playwright non installé en Docker (image allégée) → fallback Axios
+      ARMP_PDF_PLAYWRIGHT_FIRST: "false"
+      GROQ_API_KEY: ${GROQ_API_KEY:-}
+      GROQ_MODEL: ${GROQ_MODEL:-openai/gpt-oss-120b}
+      # Profil entreprise partagé (même fichier que le decision-engine).
+      COMPANY_PROFILE_PATH: /profile/company_profile.json
+    volumes:
+      - ./backend/data:/app/data          # sources-settings.json (persistant)
+      - ./backend/uploads:/app/uploads     # CV, diplômes, justificatifs
+      - ./decision_engine/data:/profile    # company_profile.json partagé
+    # Port 3004 non exposé sur l'hôte : nginx proxy /api/ en interne.
+    # Évite les conflits avec d'autres services (PM2, ancienne instance, etc.).
+    networks: [kiama]
+
+  # ── Frontend (statique servi par nginx) ───────────────────────────────────
+  frontend:
+    image: kiama-frontend
+    build:
+      context: ./frontend
+      args:
+        # Le front appelle "/api" (même origine) ; le nginx du conteneur relaie
+        # vers le backend. Aucune IP à figer : marche quel que soit l'IP:port
+        # par lequel les testeurs ouvrent l'appli sur le réseau de l'entreprise.
+        VITE_API_URL: /api
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "8096:80"
+    networks: [kiama]
+
+volumes:
+  mysql_data:
+  model_cache:
+
+networks:
+  kiama:
+    driver: bridge
