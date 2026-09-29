@@ -1,18 +1,28 @@
-# Dependances Node
-node_modules/
-dist/
-.next/
-build/
-
-# Python cache et venv
-__pycache__/
+# Dépendances (Node & Python)
+**/node_modules/
+**/__pycache__/
 *.py[cod]
-.venv/
+*$py.class
 venv/
-env/
+.venv/
 
-# Environnement et IDE
+# Builds et outputs
+**/dist/
+**/build/
+.next/
+*.log
+
+# Variables d'environnement confidentielles
 .env
-.env.local
-.idea/
+*.env.local
+*.env.development.local
+
+# Fichiers système & IDE
+.DS_Store
+Thumbs.db
 .vscode/
+.idea/
+
+# Fichiers SQLite locaux (si présents)
+*.sqlite
+*.db
